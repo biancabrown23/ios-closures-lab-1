@@ -70,6 +70,10 @@ Output: `"We Heart Swift"`
 
 a. Use `sortedBy` to sort `cities` in alphabetical order.
 
+let sortedCities = cities.sorted()
+
+print(sortedCities)
+
 b. Use `sortedBy` to sort `cities` alphabetical order of the second character of the city name.
 
 c. Use `sortedBy` to sort `cities` in order of the length of the city name.
@@ -83,7 +87,7 @@ a. Use `sortedBy` to sort `citiesWithPopulation` in ascending order of populatio
 
 b. Use `sortedBy` to sort `citiesWithPopulation` in reverse alphabetical order of the last character in the city name.
 
-
+let citiesWithPopulation = arrayOfStrings.sorted(by: {(a: String, b: String) -> Bool in return a > b })
 ## Question 7
 
 Sort `numbers` in ascending order by the number of divisors. If two numbers have the same number of divisors the order in which they appear in the sorted array does not matter.
