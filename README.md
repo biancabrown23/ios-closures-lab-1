@@ -24,7 +24,13 @@ Hello Closures!
 Hello Closures!
 Hello Closures!
 ```
+func applyKTimes(_ k: Int, _ closure: () -> () ) {
+for _ in 0..<k {
+closure()
+}
+}
 
+applyKTimes(3, { print("Hello Closures!") } )
 
 ## Question 2
 
